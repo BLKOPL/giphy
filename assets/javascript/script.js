@@ -1,4 +1,4 @@
-var items = ["the office", "Better call saul", "Arrested development", "It's always sunny in Philadelphia", "Death note", "Umaru chan", "Transparent", "Game of thrones", "Cowboy bebop", "Veep"];
+var items = ["the office", "Better call saul", "Arrested development", "It's always sunny in Philadelphia", "Death note", "Umaru chan", "Ash vs. evil dead", "Game of thrones", "Cowboy bebop", "Veep"];
 
 $("#add-show").on("click", function(event) {
   event.preventDefault();
@@ -23,7 +23,7 @@ $(document).on("click", "button", function() {
   var item = $(this).data("item");
   console.log("item: ", item);
   var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-    item + "&api_key=dc6zaTOxFJmzC&limit=10";
+    item + "&api_key=rMpKTp3Rj3TthD7KhzvxuiYSWZtNrJuO&limit=10";
 
   $.ajax({
       url: queryURL,
